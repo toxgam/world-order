@@ -1,0 +1,3 @@
+node_modules/
+/dataRetreive/factbook/*
+!/dataRetreive/factbook/rankorder/
