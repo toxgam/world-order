@@ -1,0 +1,42 @@
+.control-bar {
+  width: 100%;
+  height: 5%;
+}
+
+.game-zone {
+  width: 100%;
+  height: 95%;
+}
+
+.question-zone {
+  text-align: center;
+  vertical-align: center;
+  width: 100%;
+  height: 10%;
+}
+
+.play-zone {
+  text-align: center;
+  width: 100%;
+  height: 90%;
+}
+
+.options {
+  text-align: center;
+  width: 40%;
+  height: 50%;
+}
+
+.targets {
+  text-align: center;
+  width: 40%;
+  height: 50%;
+}
+
+.piece {
+  text-align: center;
+  height: 10%;
+  padding-top: 5%;
+  margin: 10%;
+  border: solid 2px;
+}
