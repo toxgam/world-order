@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Word order",
+  "name": "Word order - a world geography quiz",
   "icons": [
     {
       "src": "favicon.ico",
