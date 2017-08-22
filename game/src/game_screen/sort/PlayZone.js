@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import './GameScreen.css'
+import './game.css'
 
 import Options from './Options'
 import Targets from './Targets'

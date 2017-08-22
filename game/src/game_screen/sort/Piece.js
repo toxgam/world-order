@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Draggable from 'react-draggable'
 
-import './GameScreen.css'
+import './game.css'
 
 
 

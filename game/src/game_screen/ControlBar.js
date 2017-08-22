@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import './GameScreen.css'
+import './control-bar.css'
 
 export default class ControlBar extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
 import ControlBar from './ControlBar'
-import GameZone from './GameZone'
+import GameZone from './sort/GameZone'
 
 export default class GameScreen extends Component {
   mockData = {
