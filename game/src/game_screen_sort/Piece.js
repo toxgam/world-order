@@ -10,21 +10,24 @@ export default class piece extends Component {
   state = {controlledPosition: null}
 
   componentDidMount() {
-    if (this.props.setPositions) {
-      this.props.setPositions()
-    }
+    this.props.setPositions()
   }
 
   handleStop = (e, position) => {
     if (this.props.check !== undefined) {
-      let match = this.props.check()
-      if (match !== null) {
-        console.log(match)
-        this.setState({controlledPosition: {x: position.x - match.x, y: position.y - match.y}})
-      } else {
-        this.setState({controlledPosition: {x: 0, y: 0}})
-      }
+      this.props.check()
+      // let match = this.props.check()
+      // if (match !== null) {
+      //   console.log(match)
+      //   this.setState({controlledPosition: {x: position.x - match.x, y: position.y - match.y}})
+      // } else {
+      //   this.setState({controlledPosition: {x: 0, y: 0}})
+      // }
     }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({controlledPosition: nextProps.offset})
   }
 
   render() {
