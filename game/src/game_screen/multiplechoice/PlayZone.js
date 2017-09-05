@@ -29,11 +29,16 @@ export default class PlayZone extends Component {
     // Graph animation
     const maxData = Math.max(...this.props.data)
     console.log(this.props.data)
-    TweenLite.to(barChart, animationTime, {width: (i) => {return Math.max(1, (35 * this.props.data[i] / maxData)) + "%"}})
+    TweenLite.to(barChart, animationTime, {
+      width: (i) => {return Math.max(1, (50 * this.props.data[i] / maxData)) + "%"},
+      visibility: "visible"
+    })
     TweenLite.to(barData, animationTime, {visibility: "visible"})
   }
 
   render() {
+    const maxData = Math.max(...this.props.data)
+
     return(
       <div className="play-zone">
         {this.props.options.map((e, i) =>
@@ -42,6 +47,7 @@ export default class PlayZone extends Component {
             id={i}
             option={e}
             data={this.props.data[i]}
+            cover={this.props.data[i] / maxData}
             choose={this.choose.bind(this)}
           />
         )}

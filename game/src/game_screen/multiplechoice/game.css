@@ -46,6 +46,8 @@
 }
 
 .option-bar {
+  text-align: left;
+  visibility: hidden;
   height: 40%;
   width: 0%;
   padding-top: 5%;
@@ -53,4 +55,8 @@
   margin-left: 3%;
   background: linear-gradient(to bottom, rgb(209, 132, 46), rgb(150, 95, 33));
   background-clip: content-box;  
+}
+
+.option-bar-data {
+  padding-top: 3%;
 }
