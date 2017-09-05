@@ -10,10 +10,11 @@ export default class GameZone extends Component {
   render() {
     return(
       <div className="game-zone">
-        <QuestionZone question={this.props.mockData.question}/>
+        <QuestionZone question={this.props.data.question}/>
         <PlayZone 
-          options={this.props.mockData.options} 
-          answer={this.props.mockData.answer}
+          options={this.props.data.options}
+          data={this.props.data.data}
+          answer={this.props.data.answer}
         />
       </div>
     )
