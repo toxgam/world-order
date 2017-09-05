@@ -37,14 +37,6 @@
   /* #D7BA7D */
 }
 
-.option-data {
-  visibility: hidden;
-  height: 50%;
-  margin-left: 3%;
-  padding-top: 7%;
-  float: left;
-}
-
 .option-bar {
   text-align: left;
   visibility: hidden;
@@ -58,5 +50,6 @@
 }
 
 .option-bar-data {
-  padding-top: 3%;
+  padding-top: 5px;
+  white-space: nowrap;
 }

@@ -11,7 +11,6 @@ const animationTime = 0.5
 export default class PlayZone extends Component {
   choose(id) {
     const barChart = document.getElementsByClassName("option-bar")
-    const barData = document.getElementsByClassName("option-data")
     const options = document.getElementsByClassName("option")
     const chosenOption = options[id]
     const answer = options[this.props.answer]
@@ -33,7 +32,6 @@ export default class PlayZone extends Component {
       width: (i) => {return Math.max(1, (50 * this.props.data[i] / maxData)) + "%"},
       visibility: "visible"
     })
-    TweenLite.to(barData, animationTime, {visibility: "visible"})
   }
 
   render() {
